@@ -67,7 +67,7 @@ export default function Footer() {
           {/* Social links */}
           <Stack direction="row" spacing={2}>
             <Link
-              href="https://github.com/stephenmbelenga"
+              href="https://github.com/stephenmurumba"
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
@@ -77,7 +77,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/stephenmbelenga"
+              href="https://www.linkedin.com/in/stephenmurumba"
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
