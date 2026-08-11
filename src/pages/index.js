@@ -17,7 +17,11 @@ import DailyForecast from "@/components/Weather/DailyForecast";
 
 import { getWeather } from "@/services/apiWeather";
 
-import { getSavedLocation, saveLocation } from "@/utils/localStorage";
+import {
+  getSavedLocation,
+  removeSavedLocation,
+  saveLocation,
+} from "@/utils/localStorage";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -27,7 +31,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleLocation = async (newLocation) => {
+  const handleNewLocation = async (newLocation) => {
     try {
       setLoading(true);
       setError("");
@@ -45,6 +49,7 @@ export default function Home() {
       setError("Unable to retrieve weather data.");
     } finally {
       setLoading(false);
+      removeSavedLocation();
     }
   };
 
@@ -53,13 +58,13 @@ export default function Home() {
 
     if (savedLocation) {
       // eslint-disable-next-line
-      handleLocation(savedLocation);
+      handleNewLocation(savedLocation);
     }
   }, []);
 
   return (
     <>
-      <Navbar onLocation={handleLocation} />
+      <Navbar onLocation={handleNewLocation} />
 
       <Container maxWidth="lg" sx={{ py: 5 }}>
         <Stack spacing={4}>

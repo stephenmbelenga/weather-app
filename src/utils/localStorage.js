@@ -27,5 +27,5 @@ export function getSavedLocation() {
 export function removeSavedLocation() {
   if (typeof window === "undefined") return;
 
-  localStorage.removeItem(LOCATION_KEY);
+  localStorage.clear();
 }

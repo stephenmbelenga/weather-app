@@ -19,8 +19,8 @@ export function getLatLong() {
       },
       {
         enableHighAccuracy: true,
-        timeout: 1000,
-        maximumAge: 3000,
+        timeout: 10000,
+        maximumAge: 30000,
       },
     );
   });
