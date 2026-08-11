@@ -10,7 +10,7 @@ export default function Navbar({ onLocation }) {
       color="transparent"
       elevation={0}
       sx={{
-        backgroundColor: "background.paper",
+        background: "background.paper",
         borderBottom: "1px solid",
         borderColor: "divider",
       }}
