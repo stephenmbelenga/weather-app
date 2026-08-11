@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## A modern, responsive weather application built with React and Material UI that provides real-time weather insights for locations around the world.
+
+## Overview
+
+Weather App is a front-end project that visualizes weather information using Open-Meteo's public APIs. It is designed to be simple, clean, and user-friendly, making it easy to check current conditions, hourly forecasts, and next-day weather trends.
+
+## Features
+
+- Location-based weather search
+- Current weather conditions and temperature
+- Hourly and daily forecast summaries
+- Responsive design for mobile, tablet, and desktop
+- Material UI-based interface
+- Data source attribution to Open-Meteo
+- Professional landing/dashboard UX
+
+## Tech Stack
+
+- React
+- Vite
+- Material UI
+- Open-Meteo API
+- JavaScript / JSX
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Before running the app locally, make sure you have the following installed:
+
+- Node.js (v18 or later)
+- npm or yarn
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+cd weather-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at the local Vite development URL shown in the terminal.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Production Build
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Build the project for production:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then preview the production build locally:
 
-## Learn More
+```bash
+npm run preview
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+```text
+src/
+  components/
+  hooks/
+  services/
+  styles/
+  App.jsx
+  main.jsx
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Weather Data
 
-## Deploy on Vercel
+This project uses the Open-Meteo API to fetch weather data. Open-Meteo provides free, open weather data without requiring API keys.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is for educational purposes only. All rights reserved.
+
+## Author
+
+Stephen Murumba
+
+## Contact
+
+- GitHub: https://github.com/stephenmbelenga
+- LinkedIn: https://www.linkedin.com/in/stephenmbelenga
