@@ -7,7 +7,7 @@ export default function Input({ value, onChange, onSubmit }) {
       <InputBase
         value={value}
         onChange={onChange}
-        placeholder="Search city..."
+        placeholder="Search for a city..."
         fullWidth
         startAdornment={
           <InputAdornment position="start">
