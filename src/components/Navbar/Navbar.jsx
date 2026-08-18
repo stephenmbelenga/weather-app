@@ -7,7 +7,7 @@ export default function Navbar({ onLocation }) {
   return (
     <AppBar
       position="sticky"
-      color="transparent"
+      color="secondary"
       elevation={0}
       sx={{
         background: "background.paper",
@@ -25,10 +25,11 @@ export default function Navbar({ onLocation }) {
         >
           <Typography
             variant="h6"
-            color="primary"
+            color=""
             sx={{
               fontWeight: 700,
               whiteSpace: "nowrap",
+              display: { xs: "none", sm: "inline" },
             }}
           >
             🌦️ Weather App
@@ -37,8 +38,9 @@ export default function Navbar({ onLocation }) {
           <Box
             sx={{
               flexGrow: 1,
-              maxWidth: 500,
               mx: "auto",
+              xs: { maxWidth: 800 },
+              lg: { maxWidth: 500 },
             }}
           >
             <SearchBar onLocation={onLocation} />

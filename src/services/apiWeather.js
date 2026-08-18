@@ -1,3 +1,5 @@
+import { getLocation } from "./apiGetLocation";
+
 const BASE_URL = "https://api.open-meteo.com/v1/forecast";
 
 export async function getWeather(lat, lon) {

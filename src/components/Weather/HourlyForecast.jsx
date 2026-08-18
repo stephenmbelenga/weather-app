@@ -19,7 +19,7 @@ export default function HourlyForecast({ weather }) {
     .filter((item) => {
       const hour = new Date(item.time).getHours();
 
-      return hour >= currentHour;
+      return hour > currentHour;
     })
     .slice(0, 12);
 

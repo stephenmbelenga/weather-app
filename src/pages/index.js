@@ -67,7 +67,7 @@ export default function Home() {
       <Navbar onLocation={handleNewLocation} />
 
       <Container maxWidth="lg" sx={{ py: 5 }}>
-        <Stack spacing={4}>
+        <Stack spacing={4} alignItems="center">
           <Typography variant="h4" fontWeight={700} color="primary">
             Weather Dashboard
           </Typography>
@@ -102,7 +102,7 @@ export default function Home() {
           )}
 
           {!loading && !weather && (
-            <Stack alignItems="center" py={10}>
+            <Stack py={10} alignItems="center">
               <Typography variant="h5" color="text.secondary">
                 Search for a city or use your location
               </Typography>
